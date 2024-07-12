@@ -1,21 +1,26 @@
 <div class="parent">
-<table border="1">
-    <thead>
-        <th>NAME</th>
-        <th>AGE</th>
-        <th>DOB</th>
-        <th>EXPERIENCE</th>
-        <th>PACKAGE</th>
-    </thead>
-    <tbody>
-        <tr *ngFor="let employee of employees" [ngClass]="{'above': employee.package >=10 }">
-            <td>{{employee.name}}</td>
-            <td>{{employee.age}}</td>
-            <td >{{employee.dob | date: 'yyyy-MM-dd'}}</td>
-            <td [ngClass]="{'low': employee.experience<=3 , 'medium':employee.experience>3 && employee.experience<5,'high':employee.experience>=5}">{{employee.experience}}</td>
-            <td>{{employee.package}}</td>
-            
-        </tr>
-    </tbody>
-</table>
+    <div class="head">
+        <h1>Employees Data</h1>
+    </div>
+    <table border="1">
+        <thead>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>DOB</th>
+            <th>EXPERIENCE</th>
+            <th>PACKAGE</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees" [ngClass]="{'above': employee.package >=10 }">
+                <td>{{employee.name}}</td>
+                <td>{{employee.age}}</td>
+                <td>{{employee.dob | date: 'yyyy-MM-dd'}}</td>
+                <td
+                    [ngClass]="{'low': employee.experience<=3 , 'medium':employee.experience>3 && employee.experience<5,'high':employee.experience>=5}">
+                    {{employee.experience}}</td>
+                <td>{{employee.package}}</td>
+
+            </tr>
+        </tbody>
+    </table>
 </div>
