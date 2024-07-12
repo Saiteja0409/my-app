@@ -1,0 +1,51 @@
+.parent {
+    width: 100vw;
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+}
+
+.left {
+    width: 20%;
+    height: 100%;
+    background-color: darkslategray;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    overflow: auto;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+.left h2 {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.left h2:hover {
+    background-color: lightgray;
+}
+
+.right {
+    width: 80%;
+    overflow: auto;
+
+}
+
+button {
+    width: 70%;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}

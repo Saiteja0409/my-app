@@ -1,0 +1,30 @@
+<div class="parent">
+    <div class="child">
+        <div class="top">
+            <h1>Body Mass Index(BMI) Calculator</h1>
+        </div>
+
+        <div class="bottom">
+            <div class="left">
+                <div class="h">
+                    <label for="">Height:</label>
+                    <input type="number" placeholder="Enter Height in cm" [(ngModel)]="height">
+                </div>
+                <div class="w">
+                    <label for="">Weight:</label>
+                    <input type="number" placeholder="Enter Weight in kg" [(ngModel)]="weight">
+                </div>
+                <button [disabled]="!height || !weight" (click)="calc()">Calculate</button>
+                <h3>your BMI is {{result}} {{result1}}</h3>
+            </div>
+            <div class="right">
+                <div class="r1">
+                    <h4>You need {{gLN}} {{weightDiff}} kgs to be in Normal Range</h4>
+                </div>
+                <div class="r2">
+                    <img src="/assets/bmi.png"alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
