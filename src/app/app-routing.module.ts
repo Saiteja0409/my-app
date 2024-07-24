@@ -16,6 +16,14 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeesDataComponent } from './employees-data/employees-data.component';
 import { EventRegComponent } from './event-reg/event-reg.component';
 import { CartComponent } from './cart/cart.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmployeesDbComponent } from './employees-db/employees-db.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { BankAccountsComponent } from './bank-accounts/bank-accounts.component';
+import { MyntraComponent } from './myntra/myntra.component';
+import { MailsComponent } from './mails/mails.component';
+import { MemeComponent } from './meme/meme.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -32,7 +40,15 @@ const routes: Routes = [
     {path:'pipes',component:PipesComponent},
     {path:'employees-data', component:EmployeesDataComponent},
     {path:'event-reg', component:EventRegComponent},
-    {path:'cart', component:CartComponent}
+    {path:'cart', component:CartComponent},
+    {path:'flipkart', component:FlipkartComponent},
+    {path:'employees-db', component:EmployeesDbComponent},
+    {path:'vehicle', component:VehicleComponent},
+    {path:'bank_accounts', component:BankAccountsComponent},
+    {path:'myntra', component:MyntraComponent},
+    {path:'mails', component:MailsComponent},
+    {path:'meme', component:MemeComponent},
+    {path:'create-vehicle', component:CreateVehicleComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

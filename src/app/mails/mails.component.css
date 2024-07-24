@@ -1,0 +1,9 @@
+.parent{
+    background-color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.completed{
+    color: gray;
+}

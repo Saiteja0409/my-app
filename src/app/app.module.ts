@@ -9,7 +9,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
@@ -20,6 +20,16 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeesDataComponent } from './employees-data/employees-data.component';
 import { EventRegComponent } from './event-reg/event-reg.component';
 import { CartComponent } from './cart/cart.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmployeesDbComponent } from './employees-db/employees-db.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BankAccountsComponent } from './bank-accounts/bank-accounts.component';
+import { MyntraComponent } from './myntra/myntra.component';
+import { MailsComponent } from './mails/mails.component';
+import { MemeComponent } from './meme/meme.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+
 
 
 @NgModule({
@@ -41,12 +51,23 @@ import { CartComponent } from './cart/cart.component';
     EmployeesDataComponent,
     EventRegComponent,
     CartComponent,
+    FlipkartComponent,
+    EmployeesDbComponent,
+    VehicleComponent,
+    BankAccountsComponent,
+    MyntraComponent,
+    MailsComponent,
+    MemeComponent,
+    CreateVehicleComponent,
+   
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,63 @@
+<div class="parent">
+    <div class="left">
+        <h1>filters</h1>
+        <div>
+            <h3>categories</h3>
+            <div>
+                <input type="checkbox" id="tshirts">
+                <label for="tshirts">men's-clothing</label>
+            </div>
+            <div>
+                <input type="checkbox" id="loungetshirts">
+                <label for="loungetshirts">jewellery</label>
+            </div>
+            <div>
+                <input type="checkbox" id="">
+                <label for="">electronics</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">women's clothing</label>
+            </div>
+        </div>
+        <div>
+            <h3>price</h3>
+            <div>
+                <input type="checkbox" id="119">
+                <label for="119">rs. 7 to rs. 50</label>
+            </div>
+            <div>
+                <input type="checkbox" id="13840">
+                <label for="13840">rs. 50 to rs. 300</label>
+            </div>
+            <div>
+                <input type="checkbox" id="27561">
+                <label for="27561">rs. 300 to rs. 600</label>
+            </div>
+            <div>
+                <input type="checkbox" id="41282">
+                <label for="41282">rs. 600 to rs. 1000</label>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div>
+            <input type="text" [(ngModel)]="term"  placeholder="search products">
+            <button (click)="filter(term)">search</button>
+        </div>
+        <div class="search">
+            <label for="">price range:</label>
+            <select class="select" name="" id="">
+                <option value="">All</option>
+                <option value="">Low to High</option>
+                <option value="">High to Low</option>
+            </select>
+        </div>
+        <div class="card" *ngFor="let product of products">
+            <img src="{{product.image}}" alt="" width="150px" height="150px">
+            <button>{{product.rating.rate}}&#9733; | {{product.rating.count}}</button>
+            <h3>{{product.category}}</h3>
+            <p>{{product.title}}</p>
+            <p>Rs.{{product.price}}</p>
+        </div>
+    </div>

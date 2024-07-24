@@ -1,0 +1,81 @@
+<div class="parent">
+    <div class="top">
+        <form action="" (ngSubmit)="register()">
+            <div class="search">
+            <input type="text" placeholder="search employee name" (keypress)="search(employeename)" [(ngModel)]="employeename"
+                name="employeename">
+            </div>
+            <div class="formbottom">
+            <div class="l1">
+
+                <div class="name">
+                    <label for="">employee name:</label>
+                    <input type="text" placeholder="Enter name" [(ngModel)]="newEmployee.name" name="name">
+                </div>
+                <div class="id">
+                    <label for="">employee id:</label>
+                    <input type="number" [(ngModel)]="newEmployee.id" name="id">
+                </div>
+                <div class="role">
+                    <label for="">designation:</label>
+                    <input type="text" [(ngModel)]="newEmployee.role" name="role">
+                </div>
+                <div class="dob">
+                    <label for="">dob:</label>
+                    <input type="date" [(ngModel)]="newEmployee.dob" name="dob">
+                </div>
+
+            </div>
+            <div class="l2">
+                <div class="email">
+                    <label for="">email:</label>
+                    <input type="text" [(ngModel)]=" newEmployee.email" name="email">
+                </div>
+                <div class="number">
+                    <label for="">phone number:</label>
+                    <input type="number" [(ngModel)]="newEmployee.contactNumber" name="contactnumber">
+                </div>
+                <div class="jd">
+                    <label for="">joining date:</label>
+                    <input type="date" [(ngModel)]="newEmployee.joiningdate" name="joiningdate">
+                </div>
+                <button type="submit">register</button>
+            </div>
+        </div>
+
+        </form>
+
+    </div>
+</div>
+<div class="bottom">
+    <table>
+        <thead>
+            <tr>
+                <th>s.no</th>
+                <th>employee name</th>
+                <th>emp id</th>
+                <th>role</th>
+                <th>dob</th>
+                <th>email</th>
+                <th>contact number</th>
+                <th>joining date</th>
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees , let i = index">
+                <td>{{i+1}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.id}}</td>
+                <td>{{employee.role}}</td>
+                <td>{{employee.dob | date:'MM-dd-yy'}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.contactNumber}}</td>
+                <td>{{employee.joiningdate | date:'MM-dd-yy'}}</td>
+                <td>
+                    <button (click)="delete(i)">remove</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

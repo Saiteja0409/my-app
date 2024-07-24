@@ -1,0 +1,61 @@
+.parent {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    overflow: auto;
+}
+
+.left {
+    width: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: small;
+    padding-left: 1%;
+    position: sticky;
+    top: 10px;
+    bottom: 0;
+}
+
+/* .left>div {
+    border: 1px solid lightgrey;
+    border-left: 0;
+    border-bottom: 0;
+} */
+h4 {
+    margin: 0;
+}
+
+.right {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    padding-left: 3%;
+
+}
+
+.search {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.select {
+    width: 150px;
+    padding: 5px;
+}
+
+.card {
+    width: 180px;
+    height: 400px;
+
+}
+
+img {
+    text-align: center;
+}
