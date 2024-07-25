@@ -25,5 +25,14 @@ export class BankAccountsService {
   getpaged(limit:number , page:number):Observable<any>{
     return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/principals?limit="+limit+"&page="+page);
   }
+  
+  deleteAccounts(id:string):Observable<any>{
+    return this._httpClient.delete("https://6128991386a213001729f9df.mockapi.io/test/v1/principals/"+id);
+  }
+
+  createAccounts(data:any):Observable<any>{
+    return this._httpClient.post("https://6128991386a213001729f9df.mockapi.io/test/v1/principals",data)
+  }
+  
 
 }

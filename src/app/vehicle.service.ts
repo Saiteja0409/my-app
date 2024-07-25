@@ -10,11 +10,15 @@ export class VehicleService {
   constructor(private _httpCilent:HttpClient) { }
 
   getVehicles():Observable<any>{
-    return this._httpCilent.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction")
+    return this._httpCilent.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction");
+  }
+
+  getVheicle(id:string):Observable<any>{
+    return this._httpCilent.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction/"+id);
   }
 
   getFilteredVehicles(term:string):Observable<any>{
-    return this._httpCilent.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction?filter="+term)
+    return this._httpCilent.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction?filter="+term);
   }
 
   getSortedVehciles(coloumn:string , order:string):Observable<any>{

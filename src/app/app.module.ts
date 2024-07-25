@@ -29,6 +29,9 @@ import { MyntraComponent } from './myntra/myntra.component';
 import { MailsComponent } from './mails/mails.component';
 import { MemeComponent } from './meme/meme.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
+import { StudentCardsComponent } from './student-cards/student-cards.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 
 
@@ -59,6 +62,9 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
     MailsComponent,
     MemeComponent,
     CreateVehicleComponent,
+    CreateAccountsComponent,
+    StudentCardsComponent,
+    VehicleDetailsComponent,
    
    
   ],

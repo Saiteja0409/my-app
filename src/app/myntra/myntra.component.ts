@@ -9,7 +9,9 @@ import { MyntraService } from '../myntra.service';
 export class MyntraComponent implements OnInit {
 
   public products: any = [];
-  public term:string = "";
+ 
+  
+ 
 
   constructor(private _myntraService: MyntraService) {
     _myntraService.getproducts().subscribe(
@@ -25,17 +27,33 @@ export class MyntraComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  filter(term:string){
-    this._myntraService.getFiltered(this.term).subscribe(
-      (data: any) => {
-        this.products = data;
-      },
 
-      (err: any) => {
-        alert("Internal Server Issue");
-      }
-    )
+ 
+
+  mens(){
+    this.products = this.products.filter((product:any)=>product.category.includes("men's clothing"));
   }
   
+  jewl(){
+    this.products = this.products.filter((product:any)=>product.category.includes("jewelery"));
+  }
+  elec(){
+    this.products = this.products.filter((product:any)=>product.category.includes("electronics"));
+  }
+  women(){
+    this.products = this.products.filter((product:any)=>product.category.includes("women's clothing"));
+  }
 
+  f7to50(){
+    this.products = this.products.filter((product:any)=>product.price >=7 && product.price <=50);
+  }
+  f50to300(){
+    this.products = this.products.filter((product:any)=>product.price >50 && product.price <=300);
+  }
+  f300to600(){
+    this.products = this.products.filter((product:any)=>product.price >300 && product.price <=600);
+  }
+  f600to1000(){
+    this.products = this.products.filter((product:any)=>product.price >600 && product.price <=1000);
+  }
 }

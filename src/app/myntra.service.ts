@@ -13,10 +13,5 @@ export class MyntraService {
     return this._httpCilent.get("https://fakestoreapi.com/products");
    }
 
-   getFiltered(term:string){
-    return this._httpCilent.get("https://fakestoreapi.com/products?filter="+term);
-   }
-
-
   
 }

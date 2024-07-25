@@ -3,47 +3,48 @@
         <h1>filters</h1>
         <div>
             <h3>categories</h3>
+
             <div>
-                <input type="checkbox" id="tshirts">
+                <input type="checkbox" (click)="mens()" id="tshirts" name="category">
                 <label for="tshirts">men's-clothing</label>
             </div>
             <div>
-                <input type="checkbox" id="loungetshirts">
-                <label for="loungetshirts">jewellery</label>
+                <input type="checkbox" (click)="jewl()" id="jew" name="category" >
+                <label for="jew">jewellery</label>
             </div>
             <div>
-                <input type="checkbox" id="">
-                <label for="">electronics</label>
+                <input type="checkbox" (click)="elec()" id="ele" name="category">
+                <label for="ele">electronics</label>
             </div>
             <div>
-                <input type="checkbox">
-                <label for="">women's clothing</label>
+                <input type="checkbox" (click)="women()" id="women" name="category">
+                <label for="women">women's clothing</label>
             </div>
         </div>
         <div>
             <h3>price</h3>
             <div>
-                <input type="checkbox" id="119">
+                <input type="checkbox" id="119" (click)="f7to50()">
                 <label for="119">rs. 7 to rs. 50</label>
             </div>
             <div>
-                <input type="checkbox" id="13840">
+                <input type="checkbox" id="13840" (click)="f50to300()">
                 <label for="13840">rs. 50 to rs. 300</label>
             </div>
             <div>
-                <input type="checkbox" id="27561">
+                <input type="checkbox" id="27561" (click)="f300to600()">
                 <label for="27561">rs. 300 to rs. 600</label>
             </div>
             <div>
-                <input type="checkbox" id="41282">
+                <input type="checkbox" id="41282" (click)="f600to1000()">
                 <label for="41282">rs. 600 to rs. 1000</label>
             </div>
         </div>
     </div>
     <div class="right">
         <div>
-            <input type="text" [(ngModel)]="term"  placeholder="search products">
-            <button (click)="filter(term)">search</button>
+            <input type="text"placeholder="search products">
+            
         </div>
         <div class="search">
             <label for="">price range:</label>

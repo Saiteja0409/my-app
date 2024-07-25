@@ -24,6 +24,9 @@ import { MyntraComponent } from './myntra/myntra.component';
 import { MailsComponent } from './mails/mails.component';
 import { MemeComponent } from './meme/meme.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
+import { StudentCardsComponent } from './student-cards/student-cards.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -48,7 +51,10 @@ const routes: Routes = [
     {path:'myntra', component:MyntraComponent},
     {path:'mails', component:MailsComponent},
     {path:'meme', component:MemeComponent},
-    {path:'create-vehicle', component:CreateVehicleComponent}
+    {path:'create-vehicle', component:CreateVehicleComponent},
+    {path:'create-accounts', component:CreateAccountsComponent},
+    {path:'student-cards', component:StudentCardsComponent},
+    {path:'vehicle-details/:id', component:VehicleDetailsComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}
