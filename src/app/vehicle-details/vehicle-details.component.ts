@@ -13,7 +13,7 @@ export class VehicleDetailsComponent implements OnInit {
   constructor(private _activatedRoute:ActivatedRoute , private _vehicleService:VehicleService) {
     _activatedRoute.params.subscribe(
       (data:any)=>{
-        _vehicleService.getVheicle(data.id).subscribe(
+        _vehicleService.getVehicle(data.id).subscribe(
           (data:any)=>{
             this.vehicle = data;
           },

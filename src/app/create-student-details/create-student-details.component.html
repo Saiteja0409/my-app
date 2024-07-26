@@ -1,0 +1,27 @@
+<h1>{{id ? "Edit Student Details" : "Create Student Details"}}</h1>
+<form action="" [formGroup]="studentForm">
+    
+    <div class="student">
+        <label for="">name:</label>
+        <input type="text" formControlName="name">
+        <br>
+        <label for="">dob:</label>
+        <input type="text" formControlName="dob">
+        <br>
+        <label for="">phone:</label>
+        <input type="text" formControlName="phone">
+        <br>
+        <label for="">email:</label>
+        <input type="text" formControlName="email">
+        <br>
+        <label for="">city:</label>
+        <input type="text" formControlName="city">
+        <br>
+        <label for="">profile-photo</label>
+        <input type="text" formControlName="profile_picture">
+        <br>
+        <button (click)="create()">{{id ? "Edit" : "Create"}}</button>
+
+    </div>
+
+</form>

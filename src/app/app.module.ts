@@ -32,6 +32,8 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
 import { StudentCardsComponent } from './student-cards/student-cards.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { CreateStudentDetailsComponent } from './create-student-details/create-student-details.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 
 
@@ -65,6 +67,8 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     CreateAccountsComponent,
     StudentCardsComponent,
     VehicleDetailsComponent,
+    CreateStudentDetailsComponent,
+    StudentDetailsComponent,
    
    
   ],

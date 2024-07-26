@@ -1,3 +1,6 @@
+<div class="search">
+    <input type="text" (keyup)="filter(term)" [(ngModel)]="term" placeholder="search student details">
+</div>
 <div class="parent">
     <div class="card" *ngFor="let student of students">
         <div class="header">
@@ -6,6 +9,8 @@
             </div>
             <div class="schoolname">
                 <h2>{{student.school_name}}</h2>
+                <h4>school-city:{{student.school_city}}</h4>
+                <h4>school-pin:{{student.school_pin}}</h4>
             </div>
         </div>
         <div class="details">
@@ -21,8 +26,10 @@
             </div>
         </div>
         <div class="footer">
-            <h4>school-city:{{student.school_city}}</h4>
-            <h4>school-pin:{{student.school_pin}}</h4>
+            <button routerLink="/dashboard/student_details/{{student.id}}" class="bluebutton">view</button>
+            <button routerLink="/dashboard/edit-student/{{student.id}}" class="greenbutton">edit</button>
+            <button (click)="delete(student.id)">delete</button>
+            
         </div>
     </div>
 </div>

@@ -27,6 +27,8 @@
 </select>
 <button (click)="search()">search</button>
 
+<button routerLink="/dashboard/create-vehicle">Create Vehicle</button>
+
 <table class="dark-table">
     <thead>
         <th>Vehicle</th>
@@ -56,10 +58,8 @@
             <td>{{vehicle.id}}</td>
             <td>
                 <button class="view" routerLink="/dashboard/vehicle-details/{{vehicle.id}}">View</button>
-                <button class="edit">edit</button>
+                <button class="edit" routerLink="/dashboard/edit-vehicle/{{vehicle.id}}">edit</button>
                 <button class="delete" (click)="delete(vehicle.id)">delete</button>
-                
-                
             </td>
         </tr>
     </tbody>

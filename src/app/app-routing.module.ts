@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -27,6 +27,9 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
 import { StudentCardsComponent } from './student-cards/student-cards.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { CreateStudentDetailsComponent } from './create-student-details/create-student-details.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { StudentCardsService } from './student-cards.service';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -54,7 +57,11 @@ const routes: Routes = [
     {path:'create-vehicle', component:CreateVehicleComponent},
     {path:'create-accounts', component:CreateAccountsComponent},
     {path:'student-cards', component:StudentCardsComponent},
-    {path:'vehicle-details/:id', component:VehicleDetailsComponent}
+    {path:'vehicle-details/:id', component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id', component:CreateVehicleComponent},
+    {path:'create_student_details', component:CreateStudentDetailsComponent},
+    {path:'student_details/:id', component:StudentDetailsComponent},
+    {path:'edit-student/:id', component:CreateStudentDetailsComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

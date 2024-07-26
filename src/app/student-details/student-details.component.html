@@ -1,0 +1,14 @@
+<div class="parent">
+    <h1>Student Details</h1>
+    <label for="">name:</label>
+    <h4>{{student.name}}</h4>
+    <br>
+    <label for="">dob:</label>
+    <h4>{{student.dob | date: "yy-MM-dd"}}</h4>
+    <br>
+    <label for="">city:</label>
+    <h4>{{student.city}}</h4>
+    <br>
+    <label for="">Photo:</label>
+    <img src="{{student.profile_picture}}" alt="">
+</div>

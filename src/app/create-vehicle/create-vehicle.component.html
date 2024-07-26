@@ -1,4 +1,4 @@
-<h1>Create Vehicle Form</h1>
+<h1>{{id ?  'Edit Vehicle Form' : 'Create Vehicle Form'}}</h1>
 <form [formGroup]="vehicleForm">
     
         <label for="">Vehicle:</label>
@@ -29,8 +29,8 @@
         <input type="text" formControlName="image">
         <br>
         <label for="">Cost:</label>
-        <input type="text" formControlName="cost">
+        <input type="text" formControlName="cost" >
         <br>
-        <button (click)="submit()">submit</button>
+        <button (click)="submit()">{{id? 'Edit' : 'Create'  }}</button>
         
 </form>

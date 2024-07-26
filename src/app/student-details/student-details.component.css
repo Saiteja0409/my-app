@@ -1,0 +1,45 @@
+.parent {
+    font-family: Arial, sans-serif;
+    width: 40%;
+    margin: 100px 250px;
+    
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-transform: capitalize;
+}
+
+.parent h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    
+}
+
+.parent label {
+    font-weight: bold;
+    color: #555;
+    
+}
+
+.parent h4 {
+    color: #444;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+}
+
+.parent img {
+    display: block;
+    max-width: 100%;
+    
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .parent {
+        padding: 15px;
+    }
+}
