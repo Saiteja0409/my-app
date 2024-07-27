@@ -30,10 +30,13 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { CreateStudentDetailsComponent } from './create-student-details/create-student-details.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { StudentCardsService } from './student-cards.service';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { CreateFormComponent } from './create-form/create-form.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
-  {path:'dashboard', component:DashboardComponent, children:[
+  {path:'dashboard',canActivate:[AuthenticationGuard], component:DashboardComponent, children:[
     {path:'welcome', component:WelcomeComponent},
     {path:'home', component:HomeComponent},
     {path:'data-binding', component:DataBindingComponent},
@@ -61,7 +64,10 @@ const routes: Routes = [
     {path:'edit-vehicle/:id', component:CreateVehicleComponent},
     {path:'create_student_details', component:CreateStudentDetailsComponent},
     {path:'student_details/:id', component:StudentDetailsComponent},
-    {path:'edit-student/:id', component:CreateStudentDetailsComponent}
+    {path:'edit-student/:id', component:CreateStudentDetailsComponent},
+    {path:'bank-details/:id', component:BankDetailsComponent},
+    {path:'create_form', component:CreateFormComponent}
+    
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

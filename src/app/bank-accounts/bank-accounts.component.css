@@ -7,4 +7,5 @@ tbody td button{
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
+    margin-right: 5px;
 }

@@ -1,0 +1,27 @@
+.parent {
+    
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 25%;
+    background-color: #f9f9f9;
+    
+}
+
+.parent h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  
+}
+
+.parent img {
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-left: 60px;
+}
+h3 span{
+    display: inline-block;
+    width: 150px;
+}

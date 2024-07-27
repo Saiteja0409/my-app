@@ -34,6 +34,8 @@ import { StudentCardsComponent } from './student-cards/student-cards.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { CreateStudentDetailsComponent } from './create-student-details/create-student-details.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
+import { CreateFormComponent } from './create-form/create-form.component';
 
 
 
@@ -69,6 +71,8 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     VehicleDetailsComponent,
     CreateStudentDetailsComponent,
     StudentDetailsComponent,
+    BankDetailsComponent,
+    CreateFormComponent,
    
    
   ],
