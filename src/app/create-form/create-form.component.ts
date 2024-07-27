@@ -16,15 +16,32 @@ export class CreateFormComponent implements OnInit {
     address: new FormGroup({
       city: new FormControl(),
       pincode: new FormControl()
-    })
+    }),
+    type: new FormControl(),
+    bussFee: new FormControl(),
+    hostelFee: new FormControl()
 
   })
 
-  constructor() { }
+  constructor() {
+    this.userForm.get('type')?.valueChanges.subscribe(
+      (data: any) => {
+        if (data == 'dayScholor') {
+          // add buss fee
+          this.userForm.addControl('bussFee', new FormControl());
+          this.userForm.removeControl('hosteFee');
+        }
+        else if (data == 'hostelFee') {
+          // add hostel fee
+          this.userForm.addControl('hostelFee', new FormControl());
+          this.userForm.removeControl('bussFee');
+        }
+      })
+  }
 
   ngOnInit(): void {
   }
-  submit(){
+  submit() {
     console.log(this.userForm);
   }
 

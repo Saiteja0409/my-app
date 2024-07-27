@@ -54,3 +54,7 @@ button:hover {
     background-color: #0056b3;
     scale: 1.02;
 }
+.radio input{
+    width: auto;
+    margin: 10px;
+}
