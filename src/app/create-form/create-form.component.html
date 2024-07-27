@@ -12,5 +12,12 @@
     <label for="">email:</label>
     <input type="email" formControlName="email">
     <br>
-    <button>create</button>
+    <div formGroupName="address">
+        <label for="">city:</label>
+        <input type="text" formControlName="city">
+        <br>
+        <label for="">pincode:</label>
+        <input type="number" formControlName="pincode">
+    </div>
+    <button (click)="submit()">submit</button>
 </form>
