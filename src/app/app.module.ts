@@ -36,6 +36,7 @@ import { CreateStudentDetailsComponent } from './create-student-details/create-s
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { CreateFormComponent } from './create-form/create-form.component';
+import { CapitalDirective } from './capital.directive';
 
 
 
@@ -73,6 +74,7 @@ import { CreateFormComponent } from './create-form/create-form.component';
     StudentDetailsComponent,
     BankDetailsComponent,
     CreateFormComponent,
+    CapitalDirective,
    
    
   ],

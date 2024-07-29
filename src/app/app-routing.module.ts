@@ -33,6 +33,7 @@ import { StudentCardsService } from './student-cards.service';
 import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateFormComponent } from './create-form/create-form.component';
+import { NotifyGuard } from './notify.guard';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -66,7 +67,7 @@ const routes: Routes = [
     {path:'student_details/:id', component:StudentDetailsComponent},
     {path:'edit-student/:id', component:CreateStudentDetailsComponent},
     {path:'bank-details/:id', component:BankDetailsComponent},
-    {path:'create_form', component:CreateFormComponent}
+    {path:'create_form', canDeactivate:[NotifyGuard], component:CreateFormComponent}
     
   ]},
   {path:'', component:LoginComponent},
