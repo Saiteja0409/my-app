@@ -55,3 +55,6 @@ button{
     text-transform: capitalize;
     background-color: #4B70F5;
 }
+.error{
+    color: red;
+}

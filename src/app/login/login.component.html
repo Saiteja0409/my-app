@@ -10,7 +10,11 @@
         <div class="password">
             <label for="">password:</label>
             <input type="text" placeholder="Enter password" formControlName="password">
+            <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+                <p class="error" *ngIf="loginForm.get('password')?.errors?.['pattern']"> *Password must contain min one character,one uppercase,one Lowercase,one number</p>
+            </div>
         </div>
+        
         <button (click)="login()">login</button>
     </form>
 </div>
