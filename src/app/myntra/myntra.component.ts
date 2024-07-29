@@ -56,4 +56,21 @@ export class MyntraComponent implements OnInit {
   f600to1000(){
     this.products = this.products.filter((product:any)=>product.price >600 && product.price <=1000);
   }
+
+  sort(event:any){
+    let value = event.target.value;
+    if(value === "lToH"){
+      this.products = this.products.sort((a:any , b:any)=>(a.price-b.price));
+    }
+    else if(value === "hToL"){
+      this.products = this.products.sort((a:any , b:any)=>(b.price-a.price));
+    }
+    else{
+      this._myntraService.getproducts().subscribe(
+        (data:any)=>{
+          this.products = data;
+        }
+      )
+    }
+  }
 }
