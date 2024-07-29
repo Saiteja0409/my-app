@@ -37,6 +37,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { CapitalDirective } from './capital.directive';
+import { PricePipe } from './price.pipe';
 
 
 
@@ -75,6 +76,7 @@ import { CapitalDirective } from './capital.directive';
     BankDetailsComponent,
     CreateFormComponent,
     CapitalDirective,
+    PricePipe,
    
    
   ],
