@@ -48,6 +48,10 @@ button {
     font-size: 16px;
     cursor: pointer;
     text-transform: capitalize;
+
+}
+button:disabled{
+    opacity: 0.5;
 }
 
 button:hover {
@@ -57,4 +61,16 @@ button:hover {
 .radio input{
     width: auto;
     margin: 10px;
+}
+.error{
+    color: red;
+    margin: 0;
+    text-transform: none;
+}
+.redButton{
+    background-color: red;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-left: 220px;
 }
