@@ -46,6 +46,7 @@ import { Sibling2Component } from './sibling2/sibling2.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
 import { OperationsComponent } from './operations/operations.component';
 import { RatingComponent } from './rating/rating.component';
+import { AboutUsModule } from './about-us/about-us.module';
 
 
 
@@ -101,7 +102,8 @@ import { RatingComponent } from './rating/rating.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
