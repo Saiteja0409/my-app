@@ -39,6 +39,7 @@ import { ParentComponent } from './parent/parent.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
 import { RatingComponent } from './rating/rating.component';
 import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
+import { SiblingCommunicationComponent } from './sibling-communication/sibling-communication.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -78,6 +79,7 @@ const routes: Routes = [
     {path:'new-calculator', component:NewCalculatorComponent},
     {path:'rating', component:RatingComponent},
     {path:'about-company', component:AboutCompanyComponent},
+    {path:'sibling-communication', component:SiblingCommunicationComponent},
     
     {
       path: 'payments',

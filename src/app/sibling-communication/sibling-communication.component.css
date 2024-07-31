@@ -1,0 +1,14 @@
+.items{
+    width: 70%;
+    height: 200px;
+    background-color: burlywood;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.sib{
+    width: 30%;
+    height: 250px;
+    background-color:cyan;
+    display: inline-block;
+    margin: 15px;
+}
