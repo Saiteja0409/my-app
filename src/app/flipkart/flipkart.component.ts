@@ -12,11 +12,11 @@ export class FlipkartComponent implements OnInit {
   public products: any[] = [
     { name: 'pen', price: 20, rating: 3, freeDelivery: false },
     { name: 'iphone', price: 80000, rating: 5, freeDelivery: true },
-    { name: 'shirt', price: 3000, rating: 4, freeDelivery: true },
-    { name: 'cap', price: 4000, rating: 5, freeDelivery: true },
-    { name: 'mobilecase', price: 199, rating: 3.5, freeDelivery: false },
+    { name: 'shirt', price: 3000, rating: 4.5, freeDelivery: true },
+    { name: 'cap', price: 4000, rating: 4.8, freeDelivery: true },
+    { name: 'mobilecase', price: 199, rating: 3.2, freeDelivery: false },
     { name: 'remote', price: 600, rating: 3, freeDelivery: false },
-    { name: 'watch', price: 7000, rating: 4.5, freeDelivery: true }
+    { name: 'watch', price: 7000, rating: 4, freeDelivery: true }
   ];
 
   constructor() { }
@@ -93,4 +93,5 @@ export class FlipkartComponent implements OnInit {
   delete(i: number) {
     this.products.splice(i, 1);
   }
+
 }

@@ -53,7 +53,8 @@
         <div class="rightBottom">
             <div class="card" *ngFor="let product of products">
                 <img src="{{product.image}}" alt="" width="150px" height="150px">
-                <button>{{product.rating.rate}}&#9733; | {{product.rating.count}}</button>
+                <button class="rating"><app-rating [rating]="product.rating.rate"></app-rating> | {{product.rating.count}}</button>
+
                 <h3>{{product.category}}</h3>
                 <p>{{product.title}}</p>
                 <p>{{product.price | price}}</p>

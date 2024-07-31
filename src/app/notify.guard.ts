@@ -8,17 +8,18 @@ import { CreateFormComponent } from './create-form/create-form.component';
 })
 export class NotifyGuard implements CanDeactivate<unknown> {
   canDeactivate(
-    component: CreateFormComponent,
+    component:unknown,
     currentRoute: ActivatedRouteSnapshot,
     currentState: RouterStateSnapshot,
     nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      if(component.userForm.dirty){
-        return confirm("If you go back your data will be not be saved. Are you willing to go back?");
-      }
-      else{
-        return true;
-      }
-   
+      // if(component.userForm.dirty){
+      //   return confirm("If you go back your data will be not be saved. Are you willing to go back?");
+      // }
+      // else{
+      //   return true;
+      // }
+      
+      return confirm("If you go back your data will be not be saved. Are you willing to go back?");
   }
 
   

@@ -52,9 +52,9 @@
 
     <div class="radio">
         <label for="">type:</label>
-        <input type="radio" name="type" formControlName="type" value="dayScholor">
+        <input type="radio" name="select" formControlName="type" value="dayScholor">
         <label for="">Day's Scholar</label>
-        <input type="radio" name="type" formControlName="type" value="residential">
+        <input type="radio" name="select" formControlName="type" value="residential">
         <label for="">Residential</label>
     </div>
     <br>
@@ -83,7 +83,6 @@
             <div formGroupName="{{i}}">
 
                 <h2>Card{{i+1}}</h2>
-
                 <label for="">Number:</label>
                 <input type="number" formControlName="number">
                 <div *ngIf="CardsArrayForm.controls[i].get('number')?. touched && CardsArrayForm.controls[i].get('number')?. invalid">
@@ -104,7 +103,6 @@
                     <p class="error" *ngIf="CardsArrayForm.controls[i].get('cvv')?.errors?.['required']">*Cvv is required</p>
                 </div>
                 <br>
-                
                 <button class="redButton" (click)="deleteCard(i)">Delete</button>
 
                 <hr>

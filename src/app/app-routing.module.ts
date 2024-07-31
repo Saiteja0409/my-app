@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { Component, createComponent, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -34,6 +34,10 @@ import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { NotifyGuard } from './notify.guard';
+import { CreateCompanyComponent } from './create-company/create-company.component';
+import { ParentComponent } from './parent/parent.component';
+import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
+import { RatingComponent } from './rating/rating.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -67,7 +71,11 @@ const routes: Routes = [
     {path:'student_details/:id', component:StudentDetailsComponent},
     {path:'edit-student/:id', component:CreateStudentDetailsComponent},
     {path:'bank-details/:id', component:BankDetailsComponent},
-    {path:'create_form', canDeactivate:[NotifyGuard], component:CreateFormComponent}
+    {path:'create_form', canDeactivate:[NotifyGuard], component:CreateFormComponent},
+    {path:'create-company', canDeactivate:[NotifyGuard], component:CreateCompanyComponent},
+    {path:'parent', component:ParentComponent},
+    {path:'new-calculator', component:NewCalculatorComponent},
+    {path:'rating', component:RatingComponent}
     
   ]},
   {path:'', component:LoginComponent},

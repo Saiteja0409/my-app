@@ -1,0 +1,19 @@
+<p>new-calculator works!</p>
+
+<div class="parent">
+    <div class="child">
+        <h1>calculator</h1>
+        <div>
+            <label for="" >num 1:</label>
+            <input type="number" [(ngModel)]="num1">
+        </div>
+        <div>
+            <label for="">num 2:</label>
+            <input type="number" [(ngModel)]="num2" >
+        </div>
+       
+        <h4>result is-{{result}} </h4>
+
+        <app-operations [num1]="num1"  [num2]="num2"  (result)="catch($event)"></app-operations>
+    </div>
+</div>
