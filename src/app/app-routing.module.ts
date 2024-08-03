@@ -49,7 +49,7 @@ const routes: Routes = [
     {path:'data-binding', component:DataBindingComponent},
     {path:'calculator', component:CalculatorComponent},
     {path:'rectangle', component:RectangleComponent},
-    {path:'circle', component:CircleComponent},
+    {path:'circle-two', component:CircleComponent},
     {path:'bmi', component:BmiComponent},
     {path:'wish-grade', component:WishGradeComponent},
     {path:'directives', component:DirectivesComponent},
@@ -80,6 +80,7 @@ const routes: Routes = [
     {path:'rating', component:RatingComponent},
     {path:'about-company', component:AboutCompanyComponent},
     {path:'sibling-communication', component:SiblingCommunicationComponent},
+    {path:'two'},
     {path:'one'},
     
     {
