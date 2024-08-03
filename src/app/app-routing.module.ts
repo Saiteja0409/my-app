@@ -63,7 +63,7 @@ const routes: Routes = [
     {path:'bank_accounts', component:BankAccountsComponent},
     {path:'myntra', component:MyntraComponent},
     {path:'mails', component:MailsComponent},
-    {path:'meme', component:MemeComponent},
+    {path:'meme-one', component:MemeComponent},
     {path:'create-vehicle', component:CreateVehicleComponent},
     {path:'create-accounts', component:CreateAccountsComponent},
     {path:'student-cards', component:StudentCardsComponent},
@@ -80,6 +80,7 @@ const routes: Routes = [
     {path:'rating', component:RatingComponent},
     {path:'about-company', component:AboutCompanyComponent},
     {path:'sibling-communication', component:SiblingCommunicationComponent},
+    {path:'one'},
     
     {
       path: 'payments',
